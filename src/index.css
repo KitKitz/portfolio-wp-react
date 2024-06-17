@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Mak";
+  src: url("./assets/fonts/MAK-bold.woff") format("woff"),
+    url("./assets/fonts/MAK-bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: #212121;
+  color: #fffced;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+.highlight {
+  color: #93ff68;
+}
+
+/* gradient */
+
+.gradient {
+  border: 2px solid transparent;
+  background: linear-gradient(#212121, #212121) padding-box,
+    linear-gradient(
+        115deg,
+        rgb(238, 40, 218, 0.9) 0%,
+        rgba(255, 105, 241, 1) 100%
+      )
+      border-box;
+  border-radius: 50em;
+}
+
+.animateOverlay,
+.gradientBtn:hover {
+  background: linear-gradient(
+    115deg,
+    rgb(238, 40, 218) 0%,
+    rgba(255, 105, 241) 100%
+  );
+}
+
+/*scrollbar styling*/
+
+.highlight-code {
+  scrollbar-width: thin;
+  scrollbar-color: #c0c0c0 #212121;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #212121;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c0c0c0;
+}
