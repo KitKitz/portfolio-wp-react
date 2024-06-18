@@ -28,8 +28,8 @@ h3 {
 
 /* gradient */
 
-.gradient {
-  border: 2px solid transparent;
+.gradientPink {
+  border: 1px solid transparent;
   background: linear-gradient(#212121, #212121) padding-box,
     linear-gradient(
         115deg,
@@ -40,12 +40,37 @@ h3 {
   border-radius: 50em;
 }
 
-.animateOverlay,
+.gradientBlend,
 .gradientBtn:hover {
+  border: 2px solid transparent;
+  background: linear-gradient(#212121, #212121) padding-box,
+    linear-gradient(
+        115deg,
+        rgba(236, 92, 221, 1) 10%,
+        rgba(147, 255, 104, 1) 90%
+      )
+      border-box;
+  border-radius: 50em;
+}
+
+.gradientBtn.emailBtn:hover {
+  border: 2px solid transparent;
+  background: linear-gradient(#fffced, #fffced) padding-box,
+    linear-gradient(
+        115deg,
+        rgba(236, 92, 221, 1) 10%,
+        rgba(147, 255, 104, 1) 90%
+      )
+      border-box;
+  border-radius: 50em;
+}
+
+.gradientBtn,
+.gradientBlend:hover {
   background: linear-gradient(
-    115deg,
-    rgb(238, 40, 218) 0%,
-    rgba(255, 105, 241) 100%
+    111deg,
+    rgba(236, 92, 221, 1) 10%,
+    rgba(147, 255, 104, 1) 90%
   );
 }
 

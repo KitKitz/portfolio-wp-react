@@ -11,17 +11,19 @@ function Project({ basePath }) {
   return (
     <>
       <>
-        <main className="sm:px-2.5">
+        <main>
           <PageTransition />
-          <SectionsCounter />
-          <ProjectInfo basePath={basePath} slug={slug} />
-          <Projects
-            basePath={basePath}
-            currentPrj={slug}
-            isInsideProjectPage={true}
-            sansH="See More"
-            displayH="Projects"
-          />
+          <div className="sm:w-[90%] mx-auto">
+            <SectionsCounter />
+            <ProjectInfo basePath={basePath} slug={slug} />
+            <Projects
+              basePath={basePath}
+              currentPrj={slug}
+              isInsideProjectPage={true}
+              sansH="See More"
+              displayH="Projects"
+            />
+          </div>
         </main>
         <footer>
           <Contact basePath={basePath} />

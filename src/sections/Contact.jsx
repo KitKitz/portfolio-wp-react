@@ -33,7 +33,7 @@ function Contact({ basePath }) {
           <div className="w-[18rem] mx-auto pt-12 flex flex-row flex-wrap justify-center md:w-[24rem]">
             <button
               onClick={copyEmail}
-              className="gradient w-[18rem] font-light text-grey gradientBtn hover:text-black  hover:font-normal text-lg mb-8 py-3 px-6 lg:mb-12"
+              className="mb-8 p-4 w-[16rem] border-2 border-grey gradientBtn emailBtn rounded-full text-lg lg:mb-12"
             >
               {copiedEmail ? copiedEmail : "Copy Email"}
             </button>
@@ -41,7 +41,7 @@ function Contact({ basePath }) {
               href={data.acf.linkedin.url}
               rel="noopener noreferrer"
               target="_blank"
-              className="text-sm pr-8 flex items-center gap-2 hover:text-accentAlt md:text-md"
+              className="text-sm mr-8 flex items-center gap-2 md:text-md hover:text-greyDark"
             >
               {data.acf.linkedin.title}
               <FaLinkedin size="1.2em" />
@@ -50,7 +50,7 @@ function Contact({ basePath }) {
               href={data.acf.github.url}
               rel="noopener noreferrer"
               target="_blank"
-              className="text-sm flex items-center gap-2 hover:text-accentAlt md:text-md"
+              className="text-sm flex items-center gap-2 md:text-md hover:text-greyDark"
             >
               {data.acf.github.title}
               <FaGithub size="1.2em" />

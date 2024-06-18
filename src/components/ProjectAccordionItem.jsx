@@ -19,10 +19,10 @@ function ProjectAccordionItem({ title, description_1, description_2, code }) {
         <>
           <ClickComponent
             as="button"
-            className="lg:text-md hover:text-accentAlt"
+            className="gradientBtn w-[16rem]"
             onClick={handleItemClick}
           >
-            {isOpen ? "Hide " : "View "} code snippet
+            {isOpen ? "Hide " : "See "} Snippet
           </ClickComponent>
 
           <div className={`${isOpen ? "block " : "hidden"}`}>

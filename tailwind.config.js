@@ -9,6 +9,7 @@ export default {
       accent: "#93FF68",
       accentAlt: "#FF69F1",
       greyDark: "#484848",
+
       grey: "#FFFCED ",
     },
     fontFamily: {

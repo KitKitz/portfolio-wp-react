@@ -35,7 +35,7 @@ function ProjectInfo({ basePath, slug }) {
                 <ul className="flex flex flex-wrap gap-2">
                   {prj._embedded["acf:term"]
                     .map((term) => (
-                      <li className="gradient py-2 px-5 " key={term.id}>
+                      <li className="gradientPink py-2 px-5 " key={term.id}>
                         {term.name}
                       </li>
                     ))
@@ -46,15 +46,27 @@ function ProjectInfo({ basePath, slug }) {
                 <h2 className="pb-4 text-greyDark">Overview</h2>
                 <p className="text-sm font-light">{prj.acf.intro}</p>
               </section>
-              <ClickComponent
-                as="a"
-                href={prj.acf.link_to_live_site}
-                rel="noopener noreferrer"
-                target="_blank"
-                className="gradient gradientBtn p-5 w-[20rem] mt-8  justify-center hover:text-black"
-              >
-                View Live website
-              </ClickComponent>
+              <div className="md:flex gap-10">
+                <ClickComponent
+                  as="a"
+                  href={prj.acf.link_to_live_site}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="gradientBtn w-[16rem] justify-center mt-10 mx-auto md:mx-0"
+                >
+                  Live Website
+                </ClickComponent>
+
+                <ClickComponent
+                  as="a"
+                  href={prj.acf.link_to_github}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="gradientBlend w-[16rem] text-grey justify-center font-normal mt-10 hover:border-none hover:text-black hover:font-medium mx-auto md:mx-0"
+                >
+                  GitHub Repo
+                </ClickComponent>
+              </div>
             </div>
           </div>
 
@@ -79,17 +91,6 @@ function ProjectInfo({ basePath, slug }) {
                 ))}
             </div>
           </section>
-          <div>
-            <ClickComponent
-              as="a"
-              href={prj.acf.link_to_live_site}
-              rel="noopener noreferrer"
-              target="_blank"
-              className="gradient gradientBtn mx-auto p-5 w-[20rem] mt-8 justify-center hover:text-black"
-            >
-              <span>View full Repo</span> <BsGithub size="1.5em" />
-            </ClickComponent>
-          </div>
         </article>
       )}
     </>
