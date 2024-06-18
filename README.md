@@ -1,8 +1,2 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This repository contains the 2024 version of my portfolio. 
+It features a headless CMS built with React and Wordpress, which was styled with Tailwind CSS. A custom useFetch hook was incorporated to streamline the data fetching process. The goal was to blend a retro wave/neon style with a more moderate aesthetic while keeping it  fun and funky. I used custom JavaScript animations with the powerful GSAP library to create playfulness and went with bright accent colours and gradients for a synthwave tone.
